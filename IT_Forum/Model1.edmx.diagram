@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7e138da15b1746109cb029f33f3778fe" Name="Diagram1">
+        <EntityTypeShape EntityType="ITForumDBModel.Articles" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.ArticleStatuses" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.Comments" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.Partners" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.Roles" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITForumDBModel.Users" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="ITForumDBModel.FK_Articles_ArticleStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="ITForumDBModel.FK_Articles_Partners" ManuallyRouted="false" />
+        <AssociationConnector Association="ITForumDBModel.FK_Comments_Articles" ManuallyRouted="false" />
+        <AssociationConnector Association="ITForumDBModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ITForumDBModel.UserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

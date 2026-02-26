@@ -1,0 +1,41 @@
+﻿<Application x:Class="IT_Forum.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:IT_Forum"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="MainBackgroundBrush" Color="#FFEEEEEE"/>
+        <!-- основной фон RGB(238,238,238) -->
+        <SolidColorBrush x:Key="SecondaryBackgroundBrush" Color="#FFDFDFDF"/>
+        <!-- Доп. фон RGB(223,223,223) -->
+        <SolidColorBrush x:Key="AccentBrush" Color="#FFFFA00C"/>
+        <!-- акцент RGB(255,160,12) -->
+
+        <!-- кнопки -->
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="#FF999999"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="23"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <!--заголовки -->
+        <Style x:Key="HeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        
+        <!--текст блоки -->
+        <Style x:Key="TextBlocks" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
