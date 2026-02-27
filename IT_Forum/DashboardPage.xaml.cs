@@ -110,7 +110,7 @@ namespace IT_Forum
                 query = query.Where(x => x.Title.Contains(search));
             }
 
-            ArticlesActivityListView.Items.Clear();
+           
             ArticlesActivityListView.ItemsSource = query.Take(20).ToList();
         }
     }
